@@ -1,2 +1,2 @@
 # Ooredo UI Kit.
-First try on UI for Ooredo ** - Experimental - **
+First try on UI for Ooredo - **Experimental**
