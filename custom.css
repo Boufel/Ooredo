@@ -10,7 +10,9 @@ body {
 }
 
 form > h4 {
-    color: #ED1C24;
+    padding-top: 10px;
+    color: #543c3d;
+
 }
 
 .red {
@@ -111,7 +113,7 @@ input[type="email"]:focus {
 }
 
 .t2_form input[type="checkbox"]:focus {
-    box-shadow: 0 0 4px #ED1C24;
+
 }
 
 .t2_form input[type="checkbox"]:checked {
@@ -144,27 +146,30 @@ input[type="email"]:focus {
     display: inline-block;
     position: relative;
     outline: none;
-    border-radius: 25%;
+    border-radius: 0%;
     border-width: 0;
     padding: 5px;
     margin: 5px;
     color: #fff;
     width: 80px;
-    height: 80px;
+    height: 30px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     transition: all 0.2s cubic-bezier(0.79, 0.38, 0.54, 0.88);
 }
 
 input[type="submit"]::before {
-    content: attr(title);
+    content: 'Confirmer';
     display: block;
     position: relative;
 }
 
+input[type="submit"]::before:hover{
+
+}
 input[type="submit"]:hover {
     display: inline;
-    border-radius: 50%;
+    border-radius: 10%;
     box-shadow: 1px 2px 5px #d0d5d8;
 }
 
@@ -463,4 +468,21 @@ input[required] {
     display: block;
     transform:  translateX(0px);
     opacity: 1;
+}
+
+svg{
+    z-index: 0;
+}
+svg>path{
+    fill: white;
+    stroke: #d2d2d2;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center center; 
+    z-index: -9 
+}
+svg>path:hover{
+    clip-path: url('#fillpartial');
+    z-index: 1;
+    fill: #ED1C24;
+    background-color: #ED1C24 !important;
 }
